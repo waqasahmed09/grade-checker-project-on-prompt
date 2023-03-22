@@ -8,11 +8,17 @@
   </head>
   <body>
     <script>
-      let userName = prompt("Your good name");
-      let userRollNumber = prompt("Your roll number");
-      let totalMarks = 1100;
-      let obtainedMarks = prompt("Enter obtained marks");
+      let userName = prompt("your good name");
+      let userRollNumber = prompt("your Roll Number");
+      let English = parseInt(prompt("Enlish obtained marks"));
+      let Math = parseInt(prompt("Math obtained marks"));
+      let Physics = parseInt(prompt("Physics obtained marks"));
+      let pakStudies = parseInt(prompt("Pak Studies obtained marks"));
+      let Islamiat = parseInt(prompt("Islamiat obtained marks"));
+      let Urdu = parseInt(prompt("Urdu obtained marks"));
       let multiply = 100;
+      let totalMarks = 600;
+      let obtainedMarks = English + Math + Physics + pakStudies + Islamiat + Urdu;
       let percentage = (obtainedMarks / totalMarks) * multiply;
       let grade;
       if (percentage > 100) {
@@ -36,7 +42,6 @@
         Roll No:  ${userRollNumber}  
         Grade:  ${grade}`);
 
-      // alert("your grae", percentage)
     </script>
   </body>
 </html>
